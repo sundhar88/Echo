@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_event"
+        android:shortcutId="screaming"
+        android:shortcutLongLabel="screams"
+        android:shortcutShortLabel="Screamer">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.ivara.aravi.echo.Screamer.Screamer_Activity"
+            android:targetPackage="com.ivara.aravi.echo.Screamer"/>
+
+        <intent
+            android:action="RANDOM"
+            android:targetClass="com.ivara.aravi.echo.Screamer.Screamer_Activity"
+            android:targetPackage="com.ivara.aravi.echo.Screamer"/>
+
+    </shortcut>
+
+</shortcuts>

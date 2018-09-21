@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ivara.aravi.echoshopping">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dribbble_copy_3"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/dribbble_copy_3"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".sliders.MyIntro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Splash"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".ShopINFO" />
+        <activity android:name=".ShopOwner" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ShopLocation"
+            android:label="@string/title_activity_shop_location" />
+        <activity android:name=".ShopImageUpload" />
+        <activity android:name=".CONSUMER" />
+        <activity android:name=".SELLER" />
+        <activity android:name=".ShopsList" />
+        <activity android:name=".ShopInsight" />
+        <activity android:name=".Details_Of_Shop" />
+        <activity android:name=".ShopDataFetcher" />
+        <activity android:name=".documentListFetcher" />
+        <activity android:name=".requestDeliveryToSeller" />
+        <activity android:name=".Requestings" />
+        <activity android:name=".StatusChecker" />
+        <activity android:name=".ContactSeller" />
+        <activity
+            android:name=".NaviToShop"
+            android:label="@string/title_activity_navi_to_shop"></activity>
+    </application>
+
+</manifest>

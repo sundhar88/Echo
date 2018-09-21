@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/shop_availabe_card"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="7dp"
+        card_view:cardCornerRadius="7dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/Card_view_image"
+            android:src="@drawable/loc"
+            android:layout_marginTop="15dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp" />
+
+        <TextView
+            android:id="@+id/Shop_availabe_name"
+            android:layout_toRightOf="@+id/Card_view_image"
+            android:layout_marginTop="25dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="SHop Name"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tap_card_tv"
+            android:layout_marginTop="65dp"
+            android:layout_toRightOf="@+id/Card_view_image"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:text=""/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

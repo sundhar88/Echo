@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ivara.aravi.echo">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dribbble_copy_3"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/dribbble_copy_3"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Sliders.MyIntro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".ChatDialogsActivity" />
+        <activity android:name=".ListUserActivity" />
+        <activity android:name=".ChatMessageActivity" />
+        <activity android:name=".UserProfile" />
+        <activity android:name=".ShoutOut.ShoutOutMainPane" />
+        <activity android:name=".ShoutOut.ShoutListener" />
+        <activity
+            android:name=".ShoutOut.ShoutsViewer"
+            android:label="@string/title_activity_shouts_viewer"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".ShoutOut.Shouter" />
+        <activity android:name=".ShoutOut.ShoutTabAndFrags.ShoutRepo" />
+        <activity android:name=".ShoutOut.ShoutTabAndFrags.ShoutStorage" />
+        <activity android:name=".ShoutOut.ShoutTabAndFrags.DescriptionActivity" />
+
+        <receiver android:name=".Screamer.Scream">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/scream_info" />
+        </receiver>
+
+        <activity android:name=".Screamer.Screamer_Activity"></activity>
+    </application>
+
+</manifest>

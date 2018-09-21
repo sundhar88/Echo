@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ivara.aravi.echo.ShoutOut.ShoutTabAndFrags.DescriptionActivity">
+
+    <ImageView
+        android:id="@+id/description_iv"
+        android:src="@color/cardview_dark_background"
+        android:layout_height="200dp"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:layout_marginTop="200dp"
+        android:id="@+id/title_desc"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="TITLE : "
+        android:textAlignment="textStart"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"/>
+
+    <TextView
+        android:id="@+id/msg_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:text="Message"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/sender_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:layout_marginBottom="25dp"
+        android:text="TextView"
+        android:textAlignment="textStart"
+         />
+
+</RelativeLayout>

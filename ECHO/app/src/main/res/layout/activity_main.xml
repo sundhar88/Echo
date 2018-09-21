@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4d5359"
+    tools:context="com.ivara.aravi.echo.MainActivity">
+
+    <ImageView
+        android:id="@+id/image_message"
+        android:src="@drawable/dribbble_copy_3"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription=""
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/image_message"
+        android:id="@+id/group_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+        
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <EditText
+                android:id="@+id/main_editUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_name"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:padding="5dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <EditText
+                android:id="@+id/main_editPassword"
+                android:hint="@string/password"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/group_login"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/main_btnLogin"
+            android:background="@xml/rounded"
+            android:textColor="#fff"
+            android:text="Login"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/main_btnRegister"
+            android:background="@xml/rounded"
+            android:textColor="#fff"
+            android:text="SignUp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_poster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18dp"
+        android:text="@string/feel_free_to_check_other_modules_of_echo"
+        android:layout_below="@+id/group_login"
+        android:paddingTop="100dp"/>
+
+    <ImageButton
+        android:src="@drawable/shop_blue"
+        android:id="@+id/open_shopper"
+        android:background="#4d5359"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="425dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/Screaming"
+        android:src="@drawable/siren"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="#4d5359"
+        android:text="scream"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/open_shopper"
+        android:layout_marginLeft="45dp"
+        android:textColor="#fff"
+        android:text="Emergency Signal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Echo Shops"
+        android:textColor="#fff"
+        android:layout_below="@id/open_shopper"
+        android:layout_marginLeft="255dp"/>
+
+</RelativeLayout>

@@ -19,9 +19,9 @@ import com.quickblox.users.model.QBUser;
 public class SignUpActivity extends AppCompatActivity {
 
     static final String APP_ID = "61145";
-    static final String AUTH_KEY = "783YOzRzR4gw-YJ";
-    static final String AUTH_SECRET = "WDC5VeK9k-g4T-A";
-    static final String ACCOUNT_KEY = "uWDNYGzogwZbA1fyZ9Kx";
+    static final String AUTH_KEY = "Your-QuickBlox-AUTH-KEY";
+    static final String AUTH_SECRET = "Your-QuickBlox-AUTH-SECRET";
+    static final String ACCOUNT_KEY = "Your-QuickBlox-ACCOUNT-KEY";
 
     Button btnSignUp, btnCancel;
     EditText edtUser, edtPass,editFullName;
